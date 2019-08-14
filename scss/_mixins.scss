@@ -1,0 +1,13 @@
+@import '_fonts';
+
+@mixin title-font {
+  font-family: 'gagalinregular';
+}
+
+@mixin subtitle-font {
+  font-family: 'lifehackmedium';
+}
+
+@mixin main-font {
+  font-family: 'ubuntulight';
+}
