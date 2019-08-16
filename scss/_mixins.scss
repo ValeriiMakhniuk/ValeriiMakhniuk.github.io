@@ -1,13 +1,33 @@
 @import '_fonts';
 
+@mixin main-font {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-style: normal;
+}
+
 @mixin title-font {
-  font-family: 'gagalinregular';
+  font-family: 'Gagalin';
+  font-weight: normal;
+  font-style: normal;
 }
 
 @mixin subtitle-font {
-  font-family: 'lifehackmedium';
+  font-family: 'Lifehack';
+  font-weight: 500;
+  font-style: normal;
 }
 
-@mixin main-font {
-  font-family: 'ubuntulight';
+
+
+@mixin btn {
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 13px 20px;
+  background-color: #e45028;
+  &:hover {
+    background-color: #c1401e;
+    transition: .2s;
+  }
 }

@@ -1,60 +1,60 @@
 @font-face {
-  font-family: 'gagalinregular';
-  src: url('gagalin-regular-webfont.eot');
-  src: url('gagalin-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('gagalin-regular-webfont.woff2') format('woff2'),
-       url('gagalin-regular-webfont.woff') format('woff');
+  font-family: 'Ubuntu';
+  src: url('/fonts/subset-Ubuntu-Light.eot');
+  src: url('/fonts/subset-Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/subset-Ubuntu-Light.woff2') format('woff2'),
+      url('/fonts/subset-Ubuntu-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/subset-Ubuntu-Bold.eot');
+  src: url('/fonts/subset-Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/subset-Ubuntu-Bold.woff2') format('woff2'),
+      url('/fonts/subset-Ubuntu-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/subset-Ubuntu-Medium.eot');
+  src: url('/fonts/subset-Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/subset-Ubuntu-Medium.woff2') format('woff2'),
+      url('/fonts/subset-Ubuntu-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/subset-Ubuntu.eot');
+  src: url('/fonts/subset-Ubuntu.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/subset-Ubuntu.woff2') format('woff2'),
+      url('/fonts/subset-Ubuntu.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'lifehackmedium';
-  src: url('lifehack_medium-webfont.eot');
-  src: url('lifehack_medium-webfont.eot?#iefix') format('embedded-opentype'),
-       url('lifehack_medium-webfont.woff2') format('woff2'),
-       url('lifehack_medium-webfont.woff') format('woff');
+  font-family: 'Gagalin';
+  src: url('/fonts/subset-Gagalin-Regular.eot');
+  src: url('/fonts/subset-Gagalin-Regular.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/subset-Gagalin-Regular.woff2') format('woff2'),
+      url('/fonts/subset-Gagalin-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ubuntubold';
-  src: url('ubuntu-b-webfont.eot');
-  src: url('ubuntu-b-webfont.eot?#iefix') format('embedded-opentype'),
-       url('ubuntu-b-webfont.woff2') format('woff2'),
-       url('ubuntu-b-webfont.woff') format('woff');
-  font-weight: normal;
+  font-family: 'Lifehack';
+  src: url('/fonts/subset-Lifehack-Medium.eot');
+  src: url('/fonts/subset-Lifehack-Medium.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/subset-Lifehack-Medium.woff2') format('woff2'),
+      url('/fonts/subset-Lifehack-Medium.woff') format('woff');
+  font-weight: 500;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'ubuntulight';
-  src: url('ubuntu-light-webfont.eot');
-  src: url('ubuntu-light-webfont.eot?#iefix') format('embedded-opentype'),
-       url('ubuntu-light-webfont.woff2') format('woff2'),
-       url('ubuntu-light-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-@font-face {
-  font-family: 'ubuntumedium';
-  src: url('ubuntu-medium-webfont.eot');
-  src: url('ubuntu-medium-webfont.eot?#iefix') format('embedded-opentype'),
-       url('ubuntu-medium-webfont.woff2') format('woff2'),
-       url('ubuntu-medium-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ubunturegular';
-  src: url('ubuntu-regular-webfont.eot');
-  src: url('ubuntu-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('ubuntu-regular-webfont.woff2') format('woff2'),
-       url('ubuntu-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}

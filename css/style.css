@@ -342,50 +342,98 @@ template {
 }
 
 @font-face {
-  font-family: 'gagalinregular';
-  src: url("gagalin-regular-webfont.eot");
-  src: url("gagalin-regular-webfont.eot?#iefix") format("embedded-opentype"), url("gagalin-regular-webfont.woff2") format("woff2"), url("gagalin-regular-webfont.woff") format("woff");
+  font-family: 'Ubuntu';
+  src: url("/fonts/subset-Ubuntu-Light.eot");
+  src: url("/fonts/subset-Ubuntu-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/subset-Ubuntu-Light.woff2") format("woff2"), url("/fonts/subset-Ubuntu-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("/fonts/subset-Ubuntu-Bold.eot");
+  src: url("/fonts/subset-Ubuntu-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/subset-Ubuntu-Bold.woff2") format("woff2"), url("/fonts/subset-Ubuntu-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("/fonts/subset-Ubuntu-Medium.eot");
+  src: url("/fonts/subset-Ubuntu-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/subset-Ubuntu-Medium.woff2") format("woff2"), url("/fonts/subset-Ubuntu-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("/fonts/subset-Ubuntu.eot");
+  src: url("/fonts/subset-Ubuntu.eot?#iefix") format("embedded-opentype"), url("/fonts/subset-Ubuntu.woff2") format("woff2"), url("/fonts/subset-Ubuntu.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'lifehackmedium';
-  src: url("lifehack_medium-webfont.eot");
-  src: url("lifehack_medium-webfont.eot?#iefix") format("embedded-opentype"), url("lifehack_medium-webfont.woff2") format("woff2"), url("lifehack_medium-webfont.woff") format("woff");
+  font-family: 'Gagalin';
+  src: url("/fonts/subset-Gagalin-Regular.eot");
+  src: url("/fonts/subset-Gagalin-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/subset-Gagalin-Regular.woff2") format("woff2"), url("/fonts/subset-Gagalin-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ubuntubold';
-  src: url("ubuntu-b-webfont.eot");
-  src: url("ubuntu-b-webfont.eot?#iefix") format("embedded-opentype"), url("ubuntu-b-webfont.woff2") format("woff2"), url("ubuntu-b-webfont.woff") format("woff");
+  font-family: 'Lifehack';
+  src: url("/fonts/subset-Lifehack-Medium.eot");
+  src: url("/fonts/subset-Lifehack-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/subset-Lifehack-Medium.woff2") format("woff2"), url("/fonts/subset-Lifehack-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("/fonts/subset-Ubuntu-Light.eot");
+  src: url("/fonts/subset-Ubuntu-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/subset-Ubuntu-Light.woff2") format("woff2"), url("/fonts/subset-Ubuntu-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("/fonts/subset-Ubuntu-Bold.eot");
+  src: url("/fonts/subset-Ubuntu-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/subset-Ubuntu-Bold.woff2") format("woff2"), url("/fonts/subset-Ubuntu-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("/fonts/subset-Ubuntu-Medium.eot");
+  src: url("/fonts/subset-Ubuntu-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/subset-Ubuntu-Medium.woff2") format("woff2"), url("/fonts/subset-Ubuntu-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("/fonts/subset-Ubuntu.eot");
+  src: url("/fonts/subset-Ubuntu.eot?#iefix") format("embedded-opentype"), url("/fonts/subset-Ubuntu.woff2") format("woff2"), url("/fonts/subset-Ubuntu.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ubuntulight';
-  src: url("ubuntu-light-webfont.eot");
-  src: url("ubuntu-light-webfont.eot?#iefix") format("embedded-opentype"), url("ubuntu-light-webfont.woff2") format("woff2"), url("ubuntu-light-webfont.woff") format("woff");
+  font-family: 'Gagalin';
+  src: url("/fonts/subset-Gagalin-Regular.eot");
+  src: url("/fonts/subset-Gagalin-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/subset-Gagalin-Regular.woff2") format("woff2"), url("/fonts/subset-Gagalin-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ubuntumedium';
-  src: url("ubuntu-medium-webfont.eot");
-  src: url("ubuntu-medium-webfont.eot?#iefix") format("embedded-opentype"), url("ubuntu-medium-webfont.woff2") format("woff2"), url("ubuntu-medium-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ubunturegular';
-  src: url("ubuntu-regular-webfont.eot");
-  src: url("ubuntu-regular-webfont.eot?#iefix") format("embedded-opentype"), url("ubuntu-regular-webfont.woff2") format("woff2"), url("ubuntu-regular-webfont.woff") format("woff");
-  font-weight: normal;
+  font-family: 'Lifehack';
+  src: url("/fonts/subset-Lifehack-Medium.eot");
+  src: url("/fonts/subset-Lifehack-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/subset-Lifehack-Medium.woff2") format("woff2"), url("/fonts/subset-Lifehack-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -402,9 +450,19 @@ html, body {
   height: 100%;
 }
 
+body {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-style: normal;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul, li {
@@ -415,55 +473,192 @@ ul, li {
 
 .container {
   max-width: 940px;
+  height: 100%;
+  margin: 0 auto;
   display: block;
   position: relative;
 }
 
-@font-face {
-  font-family: 'gagalinregular';
-  src: url("gagalin-regular-webfont.eot");
-  src: url("gagalin-regular-webfont.eot?#iefix") format("embedded-opentype"), url("gagalin-regular-webfont.woff2") format("woff2"), url("gagalin-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+.btn {
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 13px 20px;
+  background-color: #e45028;
 }
 
-@font-face {
-  font-family: 'lifehackmedium';
-  src: url("lifehack_medium-webfont.eot");
-  src: url("lifehack_medium-webfont.eot?#iefix") format("embedded-opentype"), url("lifehack_medium-webfont.woff2") format("woff2"), url("lifehack_medium-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+.btn:hover {
+  background-color: #c1401e;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
-@font-face {
-  font-family: 'ubuntubold';
-  src: url("ubuntu-b-webfont.eot");
-  src: url("ubuntu-b-webfont.eot?#iefix") format("embedded-opentype"), url("ubuntu-b-webfont.woff2") format("woff2"), url("ubuntu-b-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+.header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("/img/first-screen__texture.png") no-repeat center/cover, url("/img/first-screen__bg.png") no-repeat center/cover;
 }
 
-@font-face {
-  font-family: 'ubuntulight';
-  src: url("ubuntu-light-webfont.eot");
-  src: url("ubuntu-light-webfont.eot?#iefix") format("embedded-opentype"), url("ubuntu-light-webfont.woff2") format("woff2"), url("ubuntu-light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding-top: 12px;
 }
 
-@font-face {
-  font-family: 'ubuntumedium';
-  src: url("ubuntu-medium-webfont.eot");
-  src: url("ubuntu-medium-webfont.eot?#iefix") format("embedded-opentype"), url("ubuntu-medium-webfont.woff2") format("woff2"), url("ubuntu-medium-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+.header__inner .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@font-face {
-  font-family: 'ubunturegular';
-  src: url("ubuntu-regular-webfont.eot");
-  src: url("ubuntu-regular-webfont.eot?#iefix") format("embedded-opentype"), url("ubuntu-regular-webfont.woff2") format("woff2"), url("ubuntu-regular-webfont.woff") format("woff");
+.header__inner .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.header__inner .nav__item {
+  position: relative;
+  font-size: 13px;
+}
+
+.header__inner .nav__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.header__inner .nav__item:not(:last-child)::after {
+  content: "\2022";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  margin-left: 30px;
+  color: #ffffff;
+}
+
+.header__inner .nav__link {
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header__btn {
+  color: #ffffff;
+}
+
+.header__promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15% 0 auto 0;
+}
+
+.header__promo-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.header__promo-img::before {
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: 0;
+  display: block;
+  width: 451px;
+  height: 241px;
+  background-image: url("/img/first-screen__burger-decor.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__promo-desc {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.header__promo-title1 {
+  font-family: 'Gagalin';
   font-weight: normal;
   font-style: normal;
+  font-size: 72px;
+  color: #f9b43b;
+}
+
+.header__promo-title2 {
+  font-family: 'Lifehack';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 65px;
+  color: #ffffff;
+}
+
+.header__control {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-bottom: 40px;
+}
+
+.pannel {
+  position: fixed;
+  top: 90px;
+  right: 50px;
+}
+
+.pannel__list {
+  display: block;
+}
+
+.pannel__item {
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.pannel__item:hover {
+  border: solid #fff 1px;
+}
+
+.pannel__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.pannel__link {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */

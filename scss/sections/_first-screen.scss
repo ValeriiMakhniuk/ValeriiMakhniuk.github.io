@@ -1,0 +1,112 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url('/img/first-screen__texture.png') no-repeat center/cover, url('/img/first-screen__bg.png') no-repeat center/cover;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 12px;
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__list {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+      }
+      &__item {
+        position: relative;
+        font-size: 13px;
+        &:not(:last-child) {
+          margin-right: 35px;
+        }
+        &:not(:last-child)::after {
+          content: "\2022";
+          position: absolute;
+          top: 0;
+          right: -20px;
+          margin-left: 30px;
+          color: #ffffff;
+        }
+      }
+      &__link {
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+    }
+  }
+  &__btn {
+    color: #ffffff;
+  }
+  &__promo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15% 0 auto 0;
+    &-img {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 70px;
+        left: 0;
+        display: block;
+        width: 451px;
+        height: 241px;
+        background-image: url('/img/first-screen__burger-decor.png');
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    &-desc {
+      flex: 1;
+    }
+    &-title1 {
+      @include title-font;
+      font-size: 72px;
+      color: #f9b43b;
+    }
+    &-title2 {
+      @include subtitle-font;
+      font-size: 65px;
+      color: #ffffff;
+    }
+  }
+  &__control {
+    align-self: center;
+    padding-bottom: 40px;
+  }
+}
+
+.pannel {
+  position: fixed;
+  top: 90px;
+  right: 50px;
+  &__list {
+    display: block;
+  }
+  &__item {
+    padding: 5px;
+    border-radius: 50%;
+    &:hover {
+      border: solid #fff 1px;
+    }
+  }
+  &__item:not(:last-child)
+  {
+    margin-bottom: 15px;
+  }
+  &__link {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+}
