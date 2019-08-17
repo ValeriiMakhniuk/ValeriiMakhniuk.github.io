@@ -1,0 +1,40 @@
+.about {
+  background: url('/img/about__bg.png') no-repeat center/cover;
+  height: 100vh;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    @include title-font;
+    align-self: center;
+    color: #2f3234;
+    font-size: 72px;
+  }
+  &__list {
+    display: flex;
+    margin-top: 55px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+  }
+  &__item-title {
+    align-self: center;
+    @include subtitle-font;
+    font-size: 24px;
+    color: #2f3234;
+    text-align: center;
+    margin: 30px 0 20px 0;
+  }
+  &__txt {
+    text-align: center;
+    align-self: center;
+    color: #2f3234;
+    font-size: 14px;
+    padding: 0 10px;
+    margin: 0;
+  }
+}

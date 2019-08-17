@@ -33,8 +33,13 @@ ul, li {
   max-width: 940px;
   height: 100%;
   margin: 0 auto;
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: relative;
+}
+
+.jc-c {
+  justify-content: center;
 }
 
 .btn {
