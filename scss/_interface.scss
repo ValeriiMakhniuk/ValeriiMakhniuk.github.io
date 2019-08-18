@@ -45,3 +45,31 @@ ul, li {
 .btn {
   @include btn;
 }
+
+.pannel {
+  position: fixed;
+  top: 90px;
+  right: 50px;
+  &__list {
+    display: block;
+  }
+  &__item {
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    &:hover {
+      border: solid #fff 1px;
+    }
+  }
+  &__item:not(:last-child)
+  {
+    margin-bottom: 15px;
+  }
+  &__link {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+}
