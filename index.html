@@ -1,3 +1,6 @@
+<!-- ? Секция Slider: как сделать блок slider__desc на всю высоту для выравнивания контента
+      ? Секця Slider: кнопка заказать не имеет курсор поинтер -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -130,6 +133,47 @@
       <!-- /.container -->
     </section>
     <!-- /.about -->
+    <section class="slider">
+      <div class="slider__inner">
+        <a href="#" class="slider__arrow">
+          <img src="/img/arrow-scroll.png" alt="предидущий слайд" class="slider__arrow-left">
+        </a>
+        <ul class="slider__list">
+        <li class="slider__slide">
+          <div class="slider__img-block">
+            <a href="#" class="slider__composition-btn">
+              <img src="/img/slider__slide-btn-img.png" alt="Кнопка бургер" class="slider__btn-img">
+              <div class="slider__btn-text">Состав</div>
+            </a>
+            <img src="/img/slider__img.png" alt="Бургер" class="slider__slide-img">
+          </div>
+          <!-- /.slider__img-block -->
+          <div class="slider__desc">
+            <h3 class="slider__slide-title">Dark BEEF Burger</h3>
+            <div class="slider__slide-txt">
+                Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины,
+                тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком,
+                салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+            </div>
+            <div class="slider__slide-order">
+              <div class="slider__slide-price">
+                <span class="slider__price-num">500</span>
+                <span class="slider__price-txt">рублей</span>
+              </div>
+              <a class="slider__slide-btn btn">Заказать</a>
+            </div>
+          </div>
+          <!-- /.slider__slider-desc -->
+        </li>
+        <!-- /.slider__slide -->
+        </ul>
+        <!-- /.slider__list -->
+        <a href="#" class="slider__arrow-right">
+          <img src="/img/arrow-scroll.png" alt="следующий слайд" class="slider__arrow-left">
+        </a>
+      </div>
+      <!-- /.slider__inner -->
+    </section>
   </div>
   <!-- /.wrapper -->
 </body>

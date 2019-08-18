@@ -1,0 +1,94 @@
+.slider {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  background: url('/img/slider__bg.png') no-repeat center / cover;
+  &__inner {
+    display: flex;
+    max-width: 1020px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  &__slide {
+    display: flex;
+    align-items: center;
+    &-img {
+      align-self: flex-start;
+    }
+    &-title {
+      @include title-font;
+      font-size: 72px;
+      color: #ffffff;
+      padding-top: 50px;
+      line-height: 1;
+    }
+    &-txt {
+      font-size: 14px;
+      color: #ffffff;
+      line-height: 2;
+      margin: 40px 0 0 0;
+    }
+    &-order {
+      display: flex;
+    }
+    &-price {
+      color: #e35028;
+    }
+    &-btn {
+      align-self: flex-end;
+      color: #fff;
+      margin-left: 30px;
+    }
+  }
+  &__price-num {
+    @include title-font;
+    font-size: 72px;
+  }
+  &__price-txt {
+    @include title-font;
+    font-size: 30px;
+  }
+  &__img-block {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    &::after {
+      content: "";
+      width: 60px;
+      height: 75px;
+      background-image: url('/img/slider__img-psuedo.png');
+      margin-left: 30px;
+    }
+  }
+  &__composition-btn {
+    align-self: flex-start;
+    background-color:#f08b33;
+    padding: 14px 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+  }
+  &__btn-img {
+    align-self: flex-start;
+  }
+  &__btn-text {
+    font-family: Gagalin;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #fff;
+  }
+  &__desc {
+    align-self: flex-start;
+    height: 100%;
+    flex: 1;
+  }
+  &__arrow {
+    display: block;
+  }
+  &__arrow-left {
+    transform: rotate(90deg);
+  }
+  &__arrow-right {
+    transform: rotate(180deg);
+  }
+}
