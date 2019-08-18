@@ -900,4 +900,112 @@ ul, li {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+
+.reviews__review:nth-child(1)::before {
+  background: url("/img/reviews__photo1.jpg") no-repeat center/cover;
+}
+
+.reviews__review:nth-child(2)::before {
+  background: url("/img/reviews__photo2.jpg") no-repeat center/cover;
+}
+
+.reviews__review:nth-child(3)::before {
+  background: url("/img/reviews__photo3.jpg") no-repeat center/cover;
+}
+
+.reviews__review:nth-child(4)::before {
+  background: url("/img/reviews__photo4.jpg") no-repeat center/cover;
+}
+
+.reviews__review:nth-child(5)::before {
+  background: url("/img/reviews__photo5.jpg") no-repeat center/cover;
+}
+
+.reviews__review:nth-child(6)::before {
+  background: url("/img/reviews__photo6.jpg") no-repeat center/cover;
+}
+
+.reviews__review:nth-child(7)::before {
+  background: url("/img/reviews__photo7.jpg") no-repeat center/cover;
+}
+
+.reviews__review:nth-child(8)::before {
+  background: url("/img/reviews__photo8.jpg") no-repeat center/cover;
+}
+
+.reviews {
+  height: 100vh;
+}
+
+.reviews__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  height: 100%;
+}
+
+.reviews__review {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 50%;
+  position: relative;
+  padding: 90px 25px;
+}
+
+.reviews__review::before {
+  content: "";
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.reviews__review:hover .reviews__review-inner {
+  visibility: visible;
+}
+
+.reviews__review:hover {
+  background-color: rgba(20, 20, 20, 0.7);
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.reviews__review-inner {
+  color: #fff;
+  font-size: 14px;
+  visibility: hidden;
+}
+
+.reviews__review-title {
+  font-family: 'Gagalin';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.reviews__review-txt {
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+.reviews__review-btn {
+  background-color: #2f3234;
+  color: #fff;
+}
+
+.reviews__review-btn:hover {
+  background-color: #1f2122;
+}
 /*# sourceMappingURL=style.css.map */
