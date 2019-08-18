@@ -655,6 +655,7 @@ ul, li {
 
 .pannel__item {
   padding: 5px;
+  border: 1px solid transparent;
   border-radius: 50%;
 }
 

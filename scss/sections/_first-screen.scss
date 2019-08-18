@@ -93,6 +93,7 @@
   }
   &__item {
     padding: 5px;
+    border: 1px solid transparent;
     border-radius: 50%;
     &:hover {
       border: solid #fff 1px;
