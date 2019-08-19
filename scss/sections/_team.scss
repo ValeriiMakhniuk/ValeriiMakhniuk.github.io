@@ -1,0 +1,80 @@
+.team {
+  height: 100vh;
+  background: url('/img/team__bg.jpg') no-repeat center / cover;
+  display: flex;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    width: 50%;
+    background-color: #2f3234;
+    opacity: 0.93;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding: 125px 100px;
+    height: 100%;
+    align-self: center;
+  }
+  &__title {
+    color: #f9b43b;
+    @include title-font;
+    font-size: 72px;
+    margin-bottom: 50px;
+  }
+  &__accordeon {
+
+    &-item {
+      position: relative;
+      padding-left: 20px;
+      &:not(.active) .team__accordeon-inner {
+        height: 0;
+        overflow: hidden;
+      }
+      & + & {
+        margin-top: 30px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        background: url('/img/team__polygon.png') no-repeat;
+        width: 9px;
+        height: 7px;
+        top: 5px;
+        left: 0;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+    &-inner {
+      display: flex;
+      padding-top: 15px;
+      color: #ffffff;
+    }
+  }
+  &__username {
+    @include title-font;
+    color: #ffffff;
+    font-size: 14px;
+    position: relative;
+  }
+  &__user-img {
+    width: 100px;
+    height: 100px;
+    background: url('/img/team__user-img.jpg') no-repeat 60% center / cover;
+    border: solid 0 transparent;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  &__desc {
+    font-style: 14px;
+    padding-left: 20px;
+    &-title {
+      margin-bottom: 20px;
+    }
+    &-txt {
+      margin: 0;
+    }
+  }
+}

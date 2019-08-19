@@ -1066,4 +1066,115 @@ ul, li {
 .reviews__review-btn:hover {
   background-color: #1f2122;
 }
+
+.team {
+  height: 100vh;
+  background: url("/img/team__bg.jpg") no-repeat center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  width: 50%;
+  background-color: #2f3234;
+  opacity: 0.93;
+}
+
+.team__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 125px 100px;
+  height: 100%;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.team__title {
+  color: #f9b43b;
+  font-family: 'Gagalin';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 72px;
+  margin-bottom: 50px;
+}
+
+.team__accordeon-item {
+  position: relative;
+  padding-left: 20px;
+}
+
+.team__accordeon-item:not(.active) .team__accordeon-inner {
+  height: 0;
+  overflow: hidden;
+}
+
+.team__accordeon-item + .team__accordeon-item {
+  margin-top: 30px;
+}
+
+.team__accordeon-item::before {
+  content: "";
+  position: absolute;
+  background: url("/img/team__polygon.png") no-repeat;
+  width: 9px;
+  height: 7px;
+  top: 5px;
+  left: 0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.team__accordeon-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15px;
+  color: #ffffff;
+}
+
+.team__username {
+  font-family: 'Gagalin';
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 14px;
+  position: relative;
+}
+
+.team__user-img {
+  width: 100px;
+  height: 100px;
+  background: url("/img/team__user-img.jpg") no-repeat 60% center/cover;
+  border: solid 0 transparent;
+  border-radius: 50%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.team__desc {
+  font-style: 14px;
+  padding-left: 20px;
+}
+
+.team__desc-title {
+  margin-bottom: 20px;
+}
+
+.team__desc-txt {
+  margin: 0;
+}
 /*# sourceMappingURL=style.css.map */
