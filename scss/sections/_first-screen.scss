@@ -12,6 +12,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      .logotype {
+        width: 92px;
+        height: 69px;
+      }
       &__list {
         display: flex;
         justify-content: space-between;
@@ -81,5 +85,9 @@
   &__control {
     align-self: center;
     padding-bottom: 40px;
+  }
+  &__arrow-scroll {
+    width: 29px;
+    height: 15px;
   }
 }

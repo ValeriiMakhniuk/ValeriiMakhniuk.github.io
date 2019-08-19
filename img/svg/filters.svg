@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <filter id="gray">
+    <feColorMatrix in="SourceGraphic" type="saturate" values="0.2">
+      
+    </feColorMatrix>
+  </filter>
+</svg>

@@ -1,20 +1,59 @@
 .slider {
+  position: relative;
   display: flex;
   height: 100vh;
   flex-direction: column;
   justify-content: center;
   background: url('/img/slider__bg.png') no-repeat center / cover;
   &__inner {
+    position: relative;
     display: flex;
     max-width: 1020px;
     margin: 0 auto;
     align-items: center;
   }
+  &__btn-icon {
+    width: 46px;
+    height: 44px;
+  }
+  &__kkal-value {
+    position: relative;
+    margin-left: 50px;
+    @include title-font;
+    color: #ffffff;
+    font-size: 20px;
+    opacity: 0.5;
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url('/img/svg/kkal.svg');
+      width: 60px;
+      height: 60px;
+      display: block;
+      top: -28px;
+      left: -13px;
+    }
+    &::after {
+      content: "ккал";
+      display: block;
+      position: absolute;
+      left: 2px;
+      top: 35px;
+      font-size: 14px;
+    }
+  }
   &__slide {
+    position: relative;
     display: flex;
     align-items: center;
     &-img {
       align-self: flex-start;
+    }
+    &-kkal {
+      opacity: 0.5;
+      width: 60px;
+      height: 60px;
+      margin-left: 30px;
     }
     &-title {
       @include title-font;
@@ -53,18 +92,11 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    &::after {
-      content: "";
-      width: 60px;
-      height: 75px;
-      background-image: url('/img/slider__img-psuedo.png');
-      margin-left: 30px;
-    }
   }
   &__composition-btn {
     align-self: flex-start;
     background-color:#f08b33;
-    padding: 14px 20px;
+    padding: 14px 25px;
     margin-left: 30px;
     border-radius: 10px;
   }
@@ -87,8 +119,12 @@
   }
   &__arrow-left {
     transform: rotate(90deg);
+    width: 27px;
+    height: 13px;
   }
   &__arrow-right {
     transform: rotate(180deg);
+    width: 27px;
+    height: 13px;
   }
 }
