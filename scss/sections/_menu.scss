@@ -1,0 +1,69 @@
+$item: menu__item;
+
+@for $i from 1 to 4 {
+  .#{$item}:nth-child(#{$i}) .menu__item-title::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/img/menu__item-bg#{$i}.jpg') no-repeat center center / cover;
+    transform: rotate(180deg);
+    z-index: -1;
+  }
+}
+
+.menu {
+  display: flex;
+  height: 100vh;
+  background: url('/img/menu__bg.jpg') no-repeat center center / cover;
+  &__title {
+    @include title-font;
+    color: #ffffff;
+    font-size: 72px;
+    margin: 100px 0 0 100px;
+  }
+  &__container {
+    display: flex;
+    margin-left: auto;
+    height: 100%;
+  }
+  &__accordeon {
+    display: flex;
+  }
+  &__item {
+    display: flex;
+    position: relative;
+    &-title {
+      position: relative;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      padding: 40px 20px;
+      color: #ffffff;
+      @include title-font;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(20, 20, 20, 0.7);
+        z-index: -1;
+      }
+    }
+    &:not(.active) .menu__desc {
+      display: none;
+    }
+  }
+  &__desc {
+    max-width: 541px;
+    background-color: #2f3234;
+    opacity: 0.93;
+    padding: 62px 33px;
+    color: #fff;
+    line-height: 2;
+    font-size: 14px;
+  }
+}
