@@ -1083,6 +1083,9 @@ ul, li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: auto;
   width: 50%;
   background-color: #2f3234;
@@ -1097,10 +1100,9 @@ ul, li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 125px 100px;
-  height: 100%;
   -ms-flex-item-align: center;
       align-self: center;
+  width: 70%;
 }
 
 .team__title {

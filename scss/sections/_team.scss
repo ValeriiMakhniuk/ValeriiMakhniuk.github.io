@@ -5,6 +5,7 @@
   &__container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-left: auto;
     width: 50%;
     background-color: #2f3234;
@@ -13,9 +14,8 @@
   &__inner {
     display: flex;
     flex-direction: column;
-    padding: 125px 100px;
-    height: 100%;
     align-self: center;
+    width: 70%;
   }
   &__title {
     color: #f9b43b;
