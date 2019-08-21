@@ -1,0 +1,48 @@
+.footer {
+  background: url('/img/order__bg.jpg') no-repeat center center / cover;
+  padding: 15px 0;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__contacts {
+    &-address {
+      margin: 0 0 10px 0;
+      font-size: 14px;
+      color: #ffffff;
+    }
+    &-phone {
+      display: flex;
+      align-items: center;
+      color: #e45028;
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+  &__phone-svg {
+    margin-right: 5px;
+    width: 12px;
+    height: 11px;
+  }
+  &__socials {
+    &-list {
+      display: flex;
+    }
+    &-item {
+      & + & {
+        margin-left: 20px;
+      }
+    }
+    &-icon {
+      opacity: .3;
+      width: 20px;
+      height: 20px;
+      &:hover {
+        opacity: 1;
+        transition: .2s;
+      }
+    }
+  }
+}
