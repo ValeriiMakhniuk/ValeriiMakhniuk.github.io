@@ -192,13 +192,16 @@
     color: #fff;
     margin-right: 20px;
     outline: none;
+    cursor: pointer;
   }
   &__clear-btn {
+    align-self: center;
     background-color: transparent;
     border: none;
     color: #fff;
     font-size: 14px;
     font-weight: 300;
     outline: none;
+    cursor: pointer;
   }
 }

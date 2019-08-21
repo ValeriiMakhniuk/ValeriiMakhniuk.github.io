@@ -1572,14 +1572,19 @@ ul, li {
   color: #fff;
   margin-right: 20px;
   outline: none;
+  cursor: pointer;
 }
 
 .order__clear-btn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   background-color: transparent;
   border: none;
   color: #fff;
   font-size: 14px;
   font-weight: 300;
   outline: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
