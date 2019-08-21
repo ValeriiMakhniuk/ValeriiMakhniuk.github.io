@@ -36,6 +36,8 @@ $item: menu__item;
     display: flex;
     position: relative;
     &-title {
+      display: flex;
+      font-size: 40px;
       position: relative;
       writing-mode: vertical-lr;
       transform: rotate(180deg);

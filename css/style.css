@@ -1258,6 +1258,10 @@ ul, li {
 }
 
 .menu__item-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 40px;
   position: relative;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
