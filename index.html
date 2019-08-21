@@ -387,6 +387,108 @@
       <!-- /.menu__container -->
     </section>
     <!-- /.menu -->
+    <section class="order">
+      <div class="container">
+        <div class="order__inner">
+          <h2 class="order__title">Закажите доставку</h2>
+          <!-- /.order__title -->
+          <form action="/order" method="POST" class="order__form">
+            <fieldset class="order__contacts">
+              <ul class="order__contacts-list">
+                <li class="order__contacts-item">
+                  <label for="name" class="order__label">
+                    Имя
+                  </label>
+                  <!-- /.order__label -->
+                  <input type="text" id="name" class="order__contacts-input">
+                </li>
+                <!-- /.order__contacts-item -->
+                <li class="order__contacts-item">
+                  <label for="phone" class="order__label">
+                    Телефон
+                  </label> 
+                  <!-- /.order__label -->
+                    <input type="text" id="phone" class="order__contacts-input" placeholder="89212264923">
+                </li>
+                <!-- /.order__contacts-item -->
+                <li class="order__contacts-item">
+                  <label for="street" class="order__label">
+                    Улица
+                  </label> 
+                  <!-- /.order__label -->
+                  <input type="text" id="street" class="order__contacts-input">
+                </li>
+                <!-- /.order__contacts-item -->
+                <li class="order__contacts-item">
+                  <label for="house" class="order__label">
+                    Дом
+                  </label> 
+                  <!-- /.order__label -->
+                  <input type="text" id="house" class="order__contacts-input">
+                </li>
+                <!-- /.order__contacts-item -->
+                <li class="order__contacts-item">
+                  <label for="building" class="order__label">
+                    Корпус
+                  </label> 
+                  <!-- /.order__label -->
+                  <input type="text" id="building" class="order__contacts-input">
+                </li>
+                <!-- /.order__contacts-item -->
+                <li class="order__contacts-item">
+                  <label for="flat" class="order__label">
+                    Квартира
+                  </label> <!-- /.order__label -->
+                  <input type="text" id="flat" class="order__contacts-input">
+                </li>
+                <!-- /.order__contacts-item -->
+                <li class="order__contacts-item">
+                  <label for="floor" class="order__label">
+                    Этаж
+                  </label> <!-- /.order__label -->
+                  <input type="text" id="floor" class="order__contacts-input">
+                </li>
+                <!-- /.order__contacts-item -->
+              </ul>
+              <!-- /.order__contacts-list -->
+            </fieldset>
+            <!-- /.order__contacts -->
+            <fielset class="order__details">
+              <ul class="order__details-list">
+                <li class="order__details-item">
+                  <label for="comment" class="order__label">Комментарий</label>
+                  <textarea name="comment" id="comment" class="order__textarea"></textarea>
+                </li>
+                <li class="order__details-item">
+                  <label class="order__label order__radio-label">
+                    <input type="radio" name="payment" class="order__radio">
+                    <span class="order__radio-txt">Потребуется сдача</span>
+                  </label>
+                  <label class="order__label order__radio-label">
+                    <input type="radio" name="payment" class="order__radio" checked>
+                    <span class="order__radio-txt">Оплата по карте</span>
+                  </label>
+                </li>
+                <li class="order__details-item">
+                  <label class="order__checkbox">
+                    <input type="checkbox" checked>
+                    <span class="order__checkbox-txt">Не перезванивать</span>
+                  </label>
+                </li>
+                <li class="order__details-item">
+                  <button class="order__btn btn" type="submit">Заказать</button>
+                  <button class="order__clear-btn">Очистить</button>
+                </li>
+              </ul>
+            </fielset>
+          </form>
+          <!-- /.order__form -->
+        </div>
+        <!-- /.order__inner -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.order -->
   </div>
   <!-- /.wrapper -->
   <div class="pannel">
