@@ -3,16 +3,21 @@
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  @include tablets {
-    height: auto;
-  }
   position: relative;
   background: url('/img/first-screen__texture.png') no-repeat center/cover, url('/img/first-screen__bg.png') no-repeat center/cover;
+  @include tablets {
+    min-height: 100vh;
+    height: auto;
+  }
   &__inner {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    @include tablets {
+      min-height: 100vh;
+      height: auto;
+    }
     .logo {
       flex: 0.3 1 0;
     }

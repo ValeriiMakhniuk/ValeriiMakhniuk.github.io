@@ -1,11 +1,17 @@
 .about {
   background: url('/img/about__bg.png') no-repeat center/cover;
   height: 100vh;
+  @include mobile {
+    min-height: 100vh;
+    height: auto;
+  }
   &__inner {
     display: flex;
     flex-direction: column;
     @include mobile {
-      height: 90%;
+      min-height: 100vh;
+      height: auto;
+      justify-content: center;
     }
   }
   &__title {

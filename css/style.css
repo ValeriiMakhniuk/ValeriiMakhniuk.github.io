@@ -627,6 +627,7 @@ ul, li {
 
 @media screen and (max-width: 768px) {
   .header {
+    min-height: 100vh;
     height: auto;
   }
 }
@@ -643,6 +644,13 @@ ul, li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .header__inner {
+    min-height: 100vh;
+    height: auto;
+  }
 }
 
 .header__inner .logo {
@@ -802,6 +810,13 @@ ul, li {
   height: 100vh;
 }
 
+@media screen and (max-width: 480px) {
+  .about {
+    min-height: 100vh;
+    height: auto;
+  }
+}
+
 .about__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -814,7 +829,11 @@ ul, li {
 
 @media screen and (max-width: 480px) {
   .about__inner {
-    height: 90%;
+    min-height: 100vh;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
