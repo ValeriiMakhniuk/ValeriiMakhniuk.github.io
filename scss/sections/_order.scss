@@ -21,30 +21,45 @@
   &__title {
     @include title-font;
     color: #f9b43b;
-    font-size: 72px;
+    font-size: rem(72px);
     align-self: center;
-    margin-bottom: 45px;
+    margin-bottom: rem(45px);
+    @include tablets {
+      text-align: center;
+    }
   }
   &__form {
     display: flex;
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__contacts {
     width: 50%;
     border: 0;
     padding: 0;
-    margin: 0 20px 0 0;
+    margin: 0 rem(20px) 0 0;
+    @include tablets {
+      margin-right: 0;
+      margin-bottom: rem(20px);
+      width: 80%;
+    }
+    @include mobile {
+      width: 95%;
+    }
     &-list {
       height: 100%;
       display: flex;
       flex-flow: row wrap;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: -20px;
+      margin-bottom: rem(-20px);
     }
     &-item {
       display: flex;
       flex-direction: column;
-      margin-bottom: 20px;
+      margin-bottom: rem(20px);
       &:nth-child(1), &:nth-child(2) {
         width: calc(50% - 3%);
       }
@@ -58,7 +73,7 @@
     &-input {
       width: 100%;
       color: #2f3234;
-      padding: 8px 20px;
+      padding: rem(8px) rem(20px);
       outline: none;
       border: 2px solid transparent;
       border-radius: 5px;
@@ -71,25 +86,49 @@
   &__label {
     align-self: flex-start;
     color: #fff;
-    font-size: 14px;
+    font-size: rem(14px);
     display: block;
-    padding-bottom: 10px;
+    padding-bottom: rem(10px);
   }
   &__details {
     width: 50%;
+    @include tablets {
+      width: 80%;
+    }
+    @include mobile {
+      width: 95%;
+    }
     &-list {
       display: flex;
       flex-flow: row wrap;
       height: 100%;
-      margin-bottom: -20px;
+      margin-bottom: rem(-20px);
     }
     &-item {
       display: flex;
       width: 100%;
-      margin-bottom: 20px;
+      margin-bottom: rem(20px);
       &:nth-child(1) {
         flex-direction: column;
         height: 65%;
+        @include tablets {
+          height: rem(127px);
+        }
+      }
+      &:nth-child(2) {
+        @include mobile {
+          justify-content: center;
+        }
+      }
+      &:nth-child(3) {
+        @include mobile {
+          justify-content: center;
+        }
+      }
+      &:nth-child(4) {
+        @include mobile {
+          justify-content: center;
+        }
       }
     }
   }
@@ -97,7 +136,7 @@
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 8px 20px;
+    padding: rem(8px) rem(20px);
     resize: none;
     outline: none;
     border: solid 2px transparent;
@@ -119,17 +158,17 @@
       align-items: center;
       position: relative;
       & + & {
-        margin-left: 20px;
+        margin-left: rem(20px);
       }
     }
     &-txt {
-      font-size: 14px;
-      padding-left: 25px;
+      font-size: rem(14px);
+      padding-left: rem(25px);
       &::before {
         content: "";
         position: absolute;
-        width: 15px;
-        height: 15px;
+        width: rem(15px);
+        height: rem(15px);
         background-color: #fff;
         border-radius: 50%;
         top: 0;
@@ -160,14 +199,14 @@
     }
     &-txt {
       color: #fff;
-      font-size: 14px;
+      font-size: rem(14px);
       position: relative;
-      padding-left: 25px;
+      padding-left: rem(25px);
       &::before {
         content: "";
         position: absolute;
-        width: 15px;
-        height: 15px;
+        width: rem(15px);
+        height: rem(15px);
         background-color: #fff;
         top: 0;
         left: 0;
@@ -188,7 +227,7 @@
   &__btn {
     border: none;
     color: #fff;
-    margin-right: 20px;
+    margin-right: rem(20px);
     outline: none;
     cursor: pointer;
   }
@@ -197,7 +236,7 @@
     background-color: transparent;
     border: none;
     color: #fff;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     outline: none;
     cursor: pointer;

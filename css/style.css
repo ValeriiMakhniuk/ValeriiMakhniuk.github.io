@@ -1691,11 +1691,17 @@ ul, li {
   font-weight: normal;
   font-style: normal;
   color: #f9b43b;
-  font-size: 72px;
+  font-size: 4.5rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-bottom: 45px;
+  margin-bottom: 2.8125rem;
+}
+
+@media screen and (max-width: 768px) {
+  .order__title {
+    text-align: center;
+  }
 }
 
 .order__form {
@@ -1704,11 +1710,37 @@ ul, li {
   display: flex;
 }
 
+@media screen and (max-width: 768px) {
+  .order__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .order__contacts {
   width: 50%;
   border: 0;
   padding: 0;
-  margin: 0 20px 0 0;
+  margin: 0 1.25rem 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .order__contacts {
+    margin-right: 0;
+    margin-bottom: 1.25rem;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .order__contacts {
+    width: 95%;
+  }
 }
 
 .order__contacts-list {
@@ -1726,7 +1758,7 @@ ul, li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: -20px;
+  margin-bottom: -1.25rem;
 }
 
 .order__contacts-item {
@@ -1737,7 +1769,7 @@ ul, li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .order__contacts-item:nth-child(1), .order__contacts-item:nth-child(2) {
@@ -1755,7 +1787,7 @@ ul, li {
 .order__contacts-input {
   width: 100%;
   color: #2f3234;
-  padding: 8px 20px;
+  padding: 0.5rem 1.25rem;
   outline: none;
   border: 2px solid transparent;
   border-radius: 5px;
@@ -1771,13 +1803,25 @@ ul, li {
   -ms-flex-item-align: start;
       align-self: flex-start;
   color: #fff;
-  font-size: 14px;
+  font-size: 0.875rem;
   display: block;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
 }
 
 .order__details {
   width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .order__details {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .order__details {
+    width: 95%;
+  }
 }
 
 .order__details-list {
@@ -1789,7 +1833,7 @@ ul, li {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   height: 100%;
-  margin-bottom: -20px;
+  margin-bottom: -1.25rem;
 }
 
 .order__details-item {
@@ -1797,7 +1841,7 @@ ul, li {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .order__details-item:nth-child(1) {
@@ -1808,11 +1852,41 @@ ul, li {
   height: 65%;
 }
 
+@media screen and (max-width: 768px) {
+  .order__details-item:nth-child(1) {
+    height: 7.9375rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .order__details-item:nth-child(2) {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .order__details-item:nth-child(3) {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .order__details-item:nth-child(4) {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .order__textarea {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 8px 20px;
+  padding: 0.5rem 1.25rem;
   resize: none;
   outline: none;
   border: solid 2px transparent;
@@ -1846,19 +1920,19 @@ ul, li {
 }
 
 .order__radio-label + .order__radio-label {
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .order__radio-txt {
-  font-size: 14px;
-  padding-left: 25px;
+  font-size: 0.875rem;
+  padding-left: 1.5625rem;
 }
 
 .order__radio-txt::before {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 0.9375rem;
+  height: 0.9375rem;
   background-color: #fff;
   border-radius: 50%;
   top: 0;
@@ -1898,16 +1972,16 @@ ul, li {
 
 .order__checkbox-txt {
   color: #fff;
-  font-size: 14px;
+  font-size: 0.875rem;
   position: relative;
-  padding-left: 25px;
+  padding-left: 1.5625rem;
 }
 
 .order__checkbox-txt::before {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 0.9375rem;
+  height: 0.9375rem;
   background-color: #fff;
   top: 0;
   left: 0;
@@ -1929,7 +2003,7 @@ ul, li {
 .order__btn {
   border: none;
   color: #fff;
-  margin-right: 20px;
+  margin-right: 1.25rem;
   outline: none;
   cursor: pointer;
 }
@@ -1941,7 +2015,7 @@ ul, li {
   background-color: transparent;
   border: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
   outline: none;
   cursor: pointer;
