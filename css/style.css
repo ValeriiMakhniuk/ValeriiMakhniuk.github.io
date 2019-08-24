@@ -845,7 +845,7 @@ ul, li {
       -ms-grid-row-align: center;
       align-self: center;
   color: #2f3234;
-  font-size: 72px;
+  font-size: 4.5rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -858,7 +858,7 @@ ul, li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 55px;
+  margin-top: 3.4375rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -942,7 +942,7 @@ ul, li {
   font-size: 1.5rem;
   color: #2f3234;
   text-align: center;
-  margin: 30px 0 20px 0;
+  margin: 1.875rem 0 1.25rem 0;
 }
 
 @media screen and (max-width: 480px) {
@@ -957,9 +957,9 @@ ul, li {
 .about__txt {
   text-align: center;
   color: #2f3234;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.6;
-  padding: 0 10px;
+  padding: 0 0.625rem;
   margin: 0;
 }
 
@@ -1257,7 +1257,7 @@ ul, li {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #fff;
-  font-size: 14px;
+  font-size: 0.875rem;
   visibility: hidden;
   -ms-flex-item-align: center;
       align-self: center;
@@ -1287,7 +1287,7 @@ ul, li {
 
 .reviews__review-txt {
   line-height: 2;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -1305,6 +1305,16 @@ ul, li {
 .reviews__review-btn {
   background-color: #2f3234;
   color: #fff;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .reviews__review-btn {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 .reviews__review-btn:hover {
@@ -1360,8 +1370,8 @@ ul, li {
   font-family: 'Gagalin';
   font-weight: normal;
   font-style: normal;
-  font-size: 72px;
-  margin-bottom: 50px;
+  font-size: 4.5rem;
+  margin-bottom: 3.125rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -1391,7 +1401,7 @@ ul, li {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  padding-left: 20px;
+  padding-left: 1.25rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -1412,14 +1422,14 @@ ul, li {
 }
 
 .team__accordeon-item + .team__accordeon-item {
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .team__accordeon-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 15px;
+  padding-top: 0.9375rem;
   color: #ffffff;
   height: 0;
   overflow: hidden;
@@ -1465,8 +1475,8 @@ ul, li {
 }
 
 .team__user-img {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   background: url("/img/team__user-img.jpg") no-repeat 60% center/cover;
   border: solid 0 transparent;
   border-radius: 50%;
@@ -1499,7 +1509,7 @@ ul, li {
 }
 
 .team__desc-title {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .team__desc-txt {
@@ -1558,8 +1568,14 @@ ul, li {
   font-weight: normal;
   font-style: normal;
   color: #ffffff;
-  font-size: 72px;
-  margin: 100px 0 0 100px;
+  font-size: 4.5rem;
+  margin: 6.25rem 0 0 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .menu__title {
+    display: none;
+  }
 }
 
 .menu__container {
@@ -1587,14 +1603,14 @@ ul, li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 40px;
+  font-size: 2.5rem;
   position: relative;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  padding: 40px 20px;
+  padding: 2.5rem 1.25rem;
   color: #ffffff;
   font-family: 'Gagalin';
   font-weight: normal;
@@ -1612,18 +1628,31 @@ ul, li {
   z-index: -1;
 }
 
-.menu__item:not(.active) .menu__desc {
-  display: none;
+@media screen and (max-width: 480px) {
+  .menu__item:not(.menu__item-active) {
+    display: none;
+  }
+}
+
+.menu__item-active .menu__desc {
+  width: auto;
+  overflow: hidden;
+  max-width: 33.8125rem;
+  padding: 3.875rem 1.5625rem;
+}
+
+.menu__item-active .menu__item-title {
+  color: #f9b43b;
 }
 
 .menu__desc {
-  max-width: 541px;
+  width: 0px;
+  overflow: hidden;
   background-color: #2f3234;
   opacity: 0.93;
-  padding: 62px 33px;
   color: #fff;
   line-height: 2;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .order {

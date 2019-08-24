@@ -23,8 +23,8 @@
   &__title {
     color: #f9b43b;
     @include title-font;
-    font-size: 72px;
-    margin-bottom: 50px;
+    font-size: rem(72px);
+    margin-bottom: rem(50px);
     @include tablets {
       align-self: center;
     }
@@ -39,7 +39,7 @@
         align-items: center;
       }
       position: relative;
-      padding-left: 20px;
+      padding-left: rem(20px);
       &-active .team__accordeon-inner{
         height: auto;
         overflow: visible;
@@ -48,12 +48,12 @@
         color: #f9b43b;
       }
       & + & {
-        margin-top: 30px;
+        margin-top: rem(30px);
       }
     }
     &-inner {
       display: flex;
-      padding-top: 15px;
+      padding-top: rem(15px);
       color: #ffffff;
       height: 0;
       overflow: hidden;
@@ -84,8 +84,8 @@
     }
   }
   &__user-img {
-    width: 100px;
-    height: 100px;
+    width: rem(100px);
+    height: rem(100px);
     background: url('/img/team__user-img.jpg') no-repeat 60% center / cover;
     border: solid 0 transparent;
     border-radius: 50%;
@@ -105,7 +105,7 @@
       padding: 0;
     }
     &-title {
-      margin-bottom: 20px;
+      margin-bottom: rem(20px);
     }
     &-txt {
       margin: 0;

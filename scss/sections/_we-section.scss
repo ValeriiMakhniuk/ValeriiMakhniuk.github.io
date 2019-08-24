@@ -18,14 +18,14 @@
     @include title-font;
     align-self: center;
     color: #2f3234;
-    font-size: 72px;
+    font-size: rem(72px);
     @include mobile {
       font-size: rem(50px);
     }
   }
   &__list {
     display: flex;
-    margin-top: 55px;
+    margin-top: rem(55px);
     @include mobile {
       flex-direction: column;
     }
@@ -63,7 +63,7 @@
     font-size: rem(24px);
     color: #2f3234;
     text-align: center;
-    margin: 30px 0 20px 0;
+    margin: rem(30px) 0 rem(20px) 0;
     @include mobile {
       margin: 0;
       align-self: flex-start;
@@ -73,9 +73,9 @@
   &__txt {
     text-align: center;
     color: #2f3234;
-    font-size: 14px;
+    font-size: rem(14px);
     line-height: 1.6;
-    padding: 0 10px;
+    padding: 0 rem(10px);
     margin: 0;
     @include mobile {
       text-align: left;

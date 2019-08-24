@@ -21,8 +21,11 @@ $item: menu__item;
   &__title {
     @include title-font;
     color: #ffffff;
-    font-size: 72px;
-    margin: 100px 0 0 100px;
+    font-size: rem(72px);
+    margin: rem(100px) 0 0 rem(80px);
+    @include tablets {
+      display: none;
+    }
   }
   &__container {
     display: flex;
@@ -37,11 +40,11 @@ $item: menu__item;
     position: relative;
     &-title {
       display: flex;
-      font-size: 40px;
+      font-size: rem(40px);
       position: relative;
       writing-mode: vertical-lr;
       transform: rotate(180deg);
-      padding: 40px 20px;
+      padding: rem(40px) rem(20px);
       color: #ffffff;
       @include title-font;
       &::after {
@@ -55,17 +58,28 @@ $item: menu__item;
         z-index: -1;
       }
     }
-    &:not(.active) .menu__desc {
-      display: none;
+    @include mobile {
+      &:not(.menu__item-active) {
+        display: none;
+      }
+    }
+    &-active .menu__desc {
+      width: auto;
+      overflow: hidden;
+      max-width: rem(541px);
+      padding: rem(62px) rem(25px);
+    }
+    &-active .menu__item-title {
+      color: #f9b43b;
     }
   }
   &__desc {
-    max-width: 541px;
+    width: 0px;
+    overflow: hidden;
     background-color: #2f3234;
     opacity: 0.93;
-    padding: 62px 33px;
     color: #fff;
     line-height: 2;
-    font-size: 14px;
+    font-size: rem(14px);
   }
 }
