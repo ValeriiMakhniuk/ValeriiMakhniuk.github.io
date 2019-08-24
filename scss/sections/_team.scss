@@ -10,6 +10,9 @@
     width: 50%;
     background-color: #2f3234;
     opacity: 0.93;
+    @include tablets {
+      width: 100%;
+    }
   }
   &__inner {
     display: flex;
@@ -22,42 +25,63 @@
     @include title-font;
     font-size: 72px;
     margin-bottom: 50px;
+    @include tablets {
+      align-self: center;
+    }
   }
   &__accordeon {
-
+    display: flex;
+    flex-direction: column;
     &-item {
+      display: flex;
+      flex-direction: column;
+      @include tablets {
+        align-items: center;
+      }
       position: relative;
       padding-left: 20px;
-      &:not(.active) .team__accordeon-inner {
-        height: 0;
-        overflow: hidden;
+      &-active .team__accordeon-inner{
+        height: auto;
+        overflow: visible;
+      }
+      &-active .team__username{
+        color: #f9b43b;
       }
       & + & {
         margin-top: 30px;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        background: url('/img/team__polygon.png') no-repeat;
-        width: 9px;
-        height: 7px;
-        top: 5px;
-        left: 0;
-        margin-right: 10px;
-        cursor: pointer;
       }
     }
     &-inner {
       display: flex;
       padding-top: 15px;
       color: #ffffff;
+      height: 0;
+      overflow: hidden;
+      @include tablets {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
   &__username {
     @include title-font;
     color: #ffffff;
-    font-size: 14px;
+    font-size: rem(14px);
     position: relative;
+    @include tablets {
+      font-size: rem(25px);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background: url('/img/team__polygon.png') no-repeat;
+      width: 9px;
+      height: 7px;
+      top: 50%;
+      left: rem(-18px);
+      margin-right: 10px;
+      cursor: pointer;
+    }
   }
   &__user-img {
     width: 100px;
@@ -66,10 +90,20 @@
     border: solid 0 transparent;
     border-radius: 50%;
     flex-shrink: 0;
+    @include tablets {
+      margin-bottom: rem(20px);
+    }
   }
   &__desc {
-    font-style: 14px;
+    font-size: rem(14px);
     padding-left: 20px;
+    @include tablets {
+      text-align: center;
+      padding: 0 rem(70px);
+    }
+    @include mobile {
+      padding: 0;
+    }
     &-title {
       margin-bottom: 20px;
     }
