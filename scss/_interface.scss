@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after{
   box-sizing: border-box;
 }
 
@@ -8,6 +8,10 @@ html, body {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
@@ -30,7 +34,8 @@ ul, li {
 }
 
 .container {
-  max-width: 940px;
+  max-width: 945px;
+  width: 95%;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -84,9 +89,42 @@ ul, li {
       background-color: #fff;
       border-radius: 50%;
     }
-    // width: 6px;
-    // height: 6px;
-    // background-color: #fff;
-    // border-radius: 50%;
+  }
+}
+
+.hamburger {
+  display: none;
+  width: rem(24px);
+  height: rem(24px);
+  cursor: pointer;
+  @include tablets {
+    display: block;
+    margin-left: rem(30px);
+  }
+  &__toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: rem(24px);
+    & > span, & > span::before, & > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: #fff;
+      border-radius: 2px;
+    }
+    & > span::before {
+      content: "";
+      top: 8px;
+    }
+    & > span::after {
+      content: "";
+      top: 16px;
+    }
+  }
+  &__menu {
+    display: none;
   }
 }

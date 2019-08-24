@@ -1,39 +1,42 @@
 .header {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
+  @include tablets {
+    height: auto;
+  }
   position: relative;
   background: url('/img/first-screen__texture.png') no-repeat center/cover, url('/img/first-screen__bg.png') no-repeat center/cover;
   &__inner {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 100%;
-    padding-top: 12px;
+    .logo {
+      flex: 0.3 1 0;
+    }
     .nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding-top: rem(12px);
       .logotype {
-        width: 92px;
-        height: 69px;
+        width: rem(92px);
+        height: rem(69px);
       }
       &__list {
         display: flex;
+        flex: 1;
         justify-content: space-between;
         align-content: center;
+        margin-right: rem(15px);
       }
       &__item {
         position: relative;
-        font-size: 13px;
-        &:not(:last-child) {
-          margin-right: 35px;
-        }
-        &:not(:last-child)::after {
-          content: "\2022";
-          position: absolute;
-          top: 0;
-          right: -20px;
-          margin-left: 30px;
-          color: #ffffff;
+        font-size: rem(13px);
+        @include tablets {
+          display: none;
         }
       }
       &__link {
@@ -43,43 +46,48 @@
     }
   }
   &__btn {
-    color: #ffffff;
+    @include tablets {
+      display: block;
+    }
+    color: #fff;
   }
   &__promo {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 15% 0 auto 0;
+    @include tablets {
+      flex-direction: column;
+    }
     &-img {
       flex: 1;
-      display: flex;
-      justify-content: center;
-      position: relative;
-      &::before {
-        content: "";
-        position: absolute;
-        top: 70px;
-        left: 0;
-        display: block;
-        width: 451px;
-        height: 241px;
-        background-image: url('/img/first-screen__burger-decor.png');
-        background-repeat: no-repeat;
-        background-position: center;
-      }
+    }
+    &-pic {
+      width: 100%;
     }
     &-desc {
       flex: 1;
+      margin-left: rem(10px);
+      @include tablets {
+        text-align: center;
+        margin: rem(40px) 0;
+        padding: 0 rem(25px);
+      }
     }
     &-title1 {
       @include title-font;
-      font-size: 72px;
+      font-size: rem(72px);
       color: #f9b43b;
+      @include mobile {
+        font-size: rem(65px);
+      }
     }
     &-title2 {
       @include subtitle-font;
-      font-size: 65px;
+      font-size: rem(65px);
       color: #ffffff;
+      @include mobile {
+        font-size: rem(54px);
+      }
     }
   }
   &__control {
@@ -87,7 +95,7 @@
     padding-bottom: 40px;
   }
   &__arrow-scroll {
-    width: 29px;
-    height: 15px;
+    width: rem(29px);
+    height: rem(15px);
   }
 }

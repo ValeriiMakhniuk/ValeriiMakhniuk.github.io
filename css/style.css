@@ -438,7 +438,7 @@ template {
   font-style: normal;
 }
 
-* {
+*, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -449,6 +449,10 @@ html, body {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
@@ -473,7 +477,8 @@ ul, li {
 }
 
 .container {
-  max-width: 940px;
+  max-width: 945px;
+  width: 95%;
   height: 100%;
   margin: 0 auto;
   display: -webkit-box;
@@ -554,11 +559,76 @@ ul, li {
   border-radius: 50%;
 }
 
+.hamburger {
+  display: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    margin-left: 1.875rem;
+  }
+}
+
+.hamburger__toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 1.5rem;
+}
+
+.hamburger__toggle > span, .hamburger__toggle > span::before, .hamburger__toggle > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.hamburger__toggle > span::before {
+  content: "";
+  top: 8px;
+}
+
+.hamburger__toggle > span::after {
+  content: "";
+  top: 16px;
+}
+
+.hamburger__menu {
+  display: none;
+}
+
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: 100vh;
   position: relative;
   background: url("/img/first-screen__texture.png") no-repeat center/cover, url("/img/first-screen__bg.png") no-repeat center/cover;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: auto;
+  }
 }
 
 .header__inner {
@@ -569,8 +639,16 @@ ul, li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 100%;
-  padding-top: 12px;
+}
+
+.header__inner .logo {
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3 1 0px;
+          flex: 0.3 1 0;
 }
 
 .header__inner .nav {
@@ -583,40 +661,38 @@ ul, li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 0.75rem;
 }
 
 .header__inner .nav .logotype {
-  width: 92px;
-  height: 69px;
+  width: 5.75rem;
+  height: 4.3125rem;
 }
 
 .header__inner .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
+  margin-right: 0.9375rem;
 }
 
 .header__inner .nav__item {
   position: relative;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
-.header__inner .nav__item:not(:last-child) {
-  margin-right: 35px;
-}
-
-.header__inner .nav__item:not(:last-child)::after {
-  content: "\2022";
-  position: absolute;
-  top: 0;
-  right: -20px;
-  margin-left: 30px;
-  color: #ffffff;
+@media screen and (max-width: 768px) {
+  .header__inner .nav__item {
+    display: none;
+  }
 }
 
 .header__inner .nav__link {
@@ -625,7 +701,13 @@ ul, li {
 }
 
 .header__btn {
-  color: #ffffff;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .header__btn {
+    display: block;
+  }
 }
 
 .header__promo {
@@ -639,55 +721,68 @@ ul, li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 15% 0 auto 0;
+}
+
+@media screen and (max-width: 768px) {
+  .header__promo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .header__promo-img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
 }
 
-.header__promo-img::before {
-  content: "";
-  position: absolute;
-  top: 70px;
-  left: 0;
-  display: block;
-  width: 451px;
-  height: 241px;
-  background-image: url("/img/first-screen__burger-decor.png");
-  background-repeat: no-repeat;
-  background-position: center;
+.header__promo-pic {
+  width: 100%;
 }
 
 .header__promo-desc {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin-left: 0.625rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header__promo-desc {
+    text-align: center;
+    margin: 2.5rem 0;
+    padding: 0 1.5625rem;
+  }
 }
 
 .header__promo-title1 {
   font-family: 'Gagalin';
   font-weight: normal;
   font-style: normal;
-  font-size: 72px;
+  font-size: 4.5rem;
   color: #f9b43b;
+}
+
+@media screen and (max-width: 480px) {
+  .header__promo-title1 {
+    font-size: 4.0625rem;
+  }
 }
 
 .header__promo-title2 {
   font-family: 'Lifehack';
   font-weight: 500;
   font-style: normal;
-  font-size: 65px;
+  font-size: 4.0625rem;
   color: #ffffff;
+}
+
+@media screen and (max-width: 480px) {
+  .header__promo-title2 {
+    font-size: 3.375rem;
+  }
 }
 
 .header__control {
@@ -698,8 +793,8 @@ ul, li {
 }
 
 .header__arrow-scroll {
-  width: 29px;
-  height: 15px;
+  width: 1.8125rem;
+  height: 0.9375rem;
 }
 
 .about {
