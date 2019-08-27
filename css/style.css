@@ -573,6 +573,12 @@ ul, li {
   }
 }
 
+.hamburger-active {
+  width: 100%;
+  height: 100vh;
+  background-color: #2f3234;
+}
+
 .hamburger__toggle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1390,6 +1396,7 @@ ul, li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-height: 1000px;
 }
 
 .team__accordeon-item {
@@ -1413,12 +1420,29 @@ ul, li {
 }
 
 .team__accordeon-item-active .team__accordeon-inner {
-  height: auto;
+  min-height: 6.25rem;
+  max-height: 1000px;
   overflow: visible;
+  opacity: 1;
+  -webkit-transition: max-height 0.15s ease-in-out;
+  transition: max-height 0.15s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
 }
 
 .team__accordeon-item-active .team__username {
   color: #f9b43b;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.team__accordeon-item-active .team__username::before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
 }
 
 .team__accordeon-item + .team__accordeon-item {
@@ -1431,8 +1455,13 @@ ul, li {
   display: flex;
   padding-top: 0.9375rem;
   color: #ffffff;
-  height: 0;
+  max-height: 0;
   overflow: hidden;
+  -webkit-transition: max-height 0.15s ease-in-out;
+  transition: max-height 0.15s ease-in-out;
+  opacity: 0;
+  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
@@ -1448,6 +1477,12 @@ ul, li {
 }
 
 .team__username {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: 'Gagalin';
   font-weight: normal;
   font-style: normal;
@@ -1468,10 +1503,11 @@ ul, li {
   background: url("/img/team__polygon.png") no-repeat;
   width: 9px;
   height: 7px;
-  top: 50%;
   left: -1.125rem;
   margin-right: 10px;
   cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .team__user-img {

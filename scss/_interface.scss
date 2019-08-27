@@ -101,6 +101,11 @@ ul, li {
     display: block;
     margin-left: rem(30px);
   }
+  &-active {
+    width: 100%;
+    height: 100vh;
+    background-color: #2f3234;
+  }
   &__toggle {
     display: flex;
     flex-direction: column;

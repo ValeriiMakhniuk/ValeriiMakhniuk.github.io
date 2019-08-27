@@ -32,6 +32,7 @@
   &__accordeon {
     display: flex;
     flex-direction: column;
+    max-height: 1000px;
     &-item {
       display: flex;
       flex-direction: column;
@@ -41,11 +42,20 @@
       position: relative;
       padding-left: rem(20px);
       &-active .team__accordeon-inner{
-        height: auto;
+        min-height: rem(100px);
+        max-height: 1000px;
         overflow: visible;
+        opacity: 1;
+        transition: max-height 0.15s ease-in-out;
+        transition: opacity .2s ease-in-out;
       }
       &-active .team__username{
         color: #f9b43b;
+        transition: .2s;
+        &::before {
+          transform: rotate(180deg);
+          transition: transform .2s ease-in-out;
+        }
       }
       & + & {
         margin-top: rem(30px);
@@ -55,8 +65,11 @@
       display: flex;
       padding-top: rem(15px);
       color: #ffffff;
-      height: 0;
+      max-height: 0;
       overflow: hidden;
+      transition: max-height 0.15s ease-in-out;
+      opacity: 0;
+      transition: opacity .2s ease-in-out;
       @include tablets {
         flex-direction: column;
         align-items: center;
@@ -64,6 +77,8 @@
     }
   }
   &__username {
+    display: flex;
+    align-items: center;
     @include title-font;
     color: #ffffff;
     font-size: rem(14px);
@@ -77,10 +92,10 @@
       background: url('/img/team__polygon.png') no-repeat;
       width: 9px;
       height: 7px;
-      top: 50%;
       left: rem(-18px);
       margin-right: 10px;
       cursor: pointer;
+      transition: .3s;
     }
   }
   &__user-img {
