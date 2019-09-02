@@ -7,7 +7,7 @@ for (let i = 0; i < accordeon_item.length; i++) {
       accordeon_item[i].classList.remove('team__accordeon-item-active');
     }
     else {
-      accordeon_item[i].classList.add('team__accordeon-item-active');
+	  accordeon_item[i].classList.add('team__accordeon-item-active');
     }
   });
 }

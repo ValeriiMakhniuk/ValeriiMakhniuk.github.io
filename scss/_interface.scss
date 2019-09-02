@@ -40,7 +40,6 @@ ul, li {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .jc-c {
@@ -96,22 +95,68 @@ ul, li {
   display: none;
   width: rem(24px);
   height: rem(24px);
+  margin-left: rem(30px);
   cursor: pointer;
   @include tablets {
-    display: block;
-    margin-left: rem(30px);
+    display: flex;
   }
   &-active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100vh;
+    padding: rem(20px);
     background-color: #2f3234;
+    opacity: .98;
+    margin-left: 0;
+    cursor: auto;
+    & .hamburger__toggle > span::after {
+      top: 8px;
+      transform: rotate(45deg);
+    }
+    & .hamburger__toggle > span::before {
+      transform: rotate(-45deg);
+    }
+    & .hamburger__toggle > span {
+      height: 0;
+    }
+    & .hamburger__toggle {
+      align-self: flex-end;
+      margin-top: rem(20px);
+    }
+    & .hamburger__menu {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      padding-top: rem(140px);
+      text-align: center;
+      &-item:not(:last-child) {
+        margin-bottom: rem(50px);
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: #fff;
+          bottom: rem(-30px);
+          left: 50%;
+        }
+      }
+    }
   }
   &__toggle {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    width: rem(24px);
     height: rem(24px);
+    cursor: pointer;
     & > span, & > span::before, & > span::after {
       display: block;
       position: absolute;
@@ -131,5 +176,11 @@ ul, li {
   }
   &__menu {
     display: none;
+    &-item {
+      position: relative;
+    }
+    &-link {
+      color: #fff;
+    }
   }
 }

@@ -12,6 +12,7 @@
     opacity: 0.93;
     @include tablets {
       width: 100%;
+      height: auto;
     }
   }
   &__inner {
@@ -32,7 +33,11 @@
   &__accordeon {
     display: flex;
     flex-direction: column;
-    max-height: 1000px;
+    max-height: 100px;
+    height: auto;
+    @include tablets {
+      max-height: 1000px;
+    }
     &-item {
       display: flex;
       flex-direction: column;
@@ -46,7 +51,6 @@
         max-height: 1000px;
         overflow: visible;
         opacity: 1;
-        transition: max-height 0.15s ease-in-out;
         transition: opacity .2s ease-in-out;
       }
       &-active .team__username{

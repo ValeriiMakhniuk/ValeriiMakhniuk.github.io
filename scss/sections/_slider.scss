@@ -1,54 +1,87 @@
 .slider {
-  display: none;
   position: relative;
-  // display: flex;
+  display: flex;
   height: 100vh;
   flex-direction: column;
   justify-content: center;
   background: url('/img/slider__bg.png') no-repeat center / cover;
+  @include tablets {
+    min-height: 100vh;
+    height: auto;
+  }
   &__inner {
     position: relative;
     display: flex;
     max-width: 1020px;
     margin: 0 auto;
     align-items: center;
+    padding: 0 rem(15px);
+    @include tablets {
+      min-height: 100vh;
+      height: auto;
+      padding: rem(100px) rem(50px);
+    }
+    @include mobile {
+      padding: rem(20px) rem(5px);
+    }
   }
   &__btn-icon {
     width: 46px;
     height: 44px;
   }
-  &__kkal-value {
-    position: relative;
-    margin-left: 50px;
-    @include title-font;
-    color: #ffffff;
-    font-size: 20px;
-    opacity: 0.5;
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url('/img/svg/kkal.svg');
-      width: 60px;
-      height: 60px;
-      display: block;
-      top: -28px;
-      left: -13px;
+  &__kkal {
+    order: 3;
+    margin-left: rem(50px);
+    @include tablets {
+      order: 2;
+      margin-left: 0;
+      margin-right: rem(50px);
     }
-    &::after {
-      content: "ккал";
-      display: block;
+    @include mobile {
       position: absolute;
-      left: 2px;
-      top: 35px;
-      font-size: 14px;
+      top: rem(-50px);
+      right: rem(-50px);
+    }
+    &-value {
+      position: relative;
+      @include title-font;
+      color: #ffffff;
+      font-size: 20px;
+      opacity: 0.5;
+      &::before {
+        position: absolute;
+        content: "";
+        background-image: url('/img/svg/kkal.svg');
+        width: rem(60px);
+        height: rem(60px);
+        display: block;
+        top: -28px;
+        left: -13px;
+      }
+      &::after {
+        content: "ккал";
+        display: block;
+        position: absolute;
+        left: 2px;
+        top: 35px;
+        font-size: 14px;
+      }
     }
   }
   &__slide {
     position: relative;
     display: flex;
     align-items: center;
+    @include tablets {
+      flex-direction: column;
+    }
     &-img {
       align-self: flex-start;
+      width: 100%;
+      order: 2;
+      @include tablets {
+        order: 3;
+      }
     }
     &-kkal {
       opacity: 0.5;
@@ -62,6 +95,9 @@
       color: #ffffff;
       padding-top: 50px;
       line-height: 1;
+      @include mobile {
+        font-size: rem(50px);
+      }
     }
     &-txt {
       font-size: 14px;
@@ -92,7 +128,12 @@
   &__img-block {
     display: flex;
     flex: 1;
-    flex-direction: column;
+    flex-flow: row wrap;
+    align-items: center;
+    position: relative;
+    @include tablets {
+      justify-content: space-between;
+    }
   }
   &__composition-btn {
     align-self: flex-start;
@@ -100,6 +141,18 @@
     padding: 14px 25px;
     margin-left: 30px;
     border-radius: 10px;
+    order: 1;
+    &:hover {
+      background-color: #e35028;
+    }
+    @include mobile {
+      position: absolute;
+      top: rem(-100px);
+      left: rem(-50px);
+    }
+    &:hover .slider__composition-list {
+      display: block;
+    }
   }
   &__btn-img {
     align-self: flex-start;
@@ -111,9 +164,15 @@
     color: #fff;
   }
   &__desc {
+    display: flex;
     align-self: flex-start;
+    flex-direction: column;
     height: 100%;
     flex: 1;
+    @include tablets {
+      text-align: center;
+      align-items: center;
+    }
   }
   &__arrow {
     display: block;
@@ -127,5 +186,34 @@
     transform: rotate(180deg);
     width: 27px;
     height: 13px;
+  }
+  &__composition-list {
+    cursor: auto;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: rem(125px);
+    width: rem(270px);
+    padding: rem(20px);
+    background-color: #ffffff;
+    opacity: .9;
+    border-radius: 5px;
+    @include mobile {
+      left: rem(95px);
+    }
+  }
+  &__composition-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2f3234;
+    font-weight: 500;
+    &:not(:last-child) {
+      margin-bottom: rem(20px);
+    }
+  }
+  &__composition-icon {
+    width: rem(45px);
+    height: rem(35px);
   }
 }
