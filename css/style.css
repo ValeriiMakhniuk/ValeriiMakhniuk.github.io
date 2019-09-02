@@ -1081,7 +1081,7 @@ ul, li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1020px;
+  max-width: 63.75rem;
   margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1104,8 +1104,8 @@ ul, li {
 }
 
 .slider__btn-icon {
-  width: 46px;
-  height: 44px;
+  width: 2.875rem;
+  height: 2.75rem;
 }
 
 .slider__kkal {
@@ -1139,7 +1139,7 @@ ul, li {
   font-weight: normal;
   font-style: normal;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 1.25rem;
   opacity: 0.5;
 }
 
@@ -1150,17 +1150,17 @@ ul, li {
   width: 3.75rem;
   height: 3.75rem;
   display: block;
-  top: -28px;
-  left: -13px;
+  top: -1.75rem;
+  left: -0.8125rem;
 }
 
 .slider__kkal-value::after {
   content: "ккал";
   display: block;
   position: absolute;
-  left: 2px;
-  top: 35px;
-  font-size: 14px;
+  left: 0.125rem;
+  top: 2.1875rem;
+  font-size: 0.875rem;
 }
 
 .slider__slide {
@@ -1201,18 +1201,18 @@ ul, li {
 
 .slider__slide-kkal {
   opacity: 0.5;
-  width: 60px;
-  height: 60px;
-  margin-left: 30px;
+  width: 3.75rem;
+  height: 3.75rem;
+  margin-left: 1.875rem;
 }
 
 .slider__slide-title {
   font-family: 'Gagalin';
   font-weight: normal;
   font-style: normal;
-  font-size: 72px;
+  font-size: 4.5rem;
   color: #ffffff;
-  padding-top: 50px;
+  padding-top: 3.125rem;
   line-height: 1;
 }
 
@@ -1223,10 +1223,10 @@ ul, li {
 }
 
 .slider__slide-txt {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #ffffff;
   line-height: 2;
-  margin: 40px 0 0 0;
+  margin: 2.5rem 0 0 0;
 }
 
 .slider__slide-order {
@@ -1243,21 +1243,21 @@ ul, li {
   -ms-flex-item-align: end;
       align-self: flex-end;
   color: #fff;
-  margin-left: 30px;
+  margin-left: 1.875rem;
 }
 
 .slider__price-num {
   font-family: 'Gagalin';
   font-weight: normal;
   font-style: normal;
-  font-size: 72px;
+  font-size: 4.5rem;
 }
 
 .slider__price-txt {
   font-family: 'Gagalin';
   font-weight: normal;
   font-style: normal;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .slider__img-block {
@@ -1289,9 +1289,9 @@ ul, li {
   -ms-flex-item-align: start;
       align-self: flex-start;
   background-color: #f08b33;
-  padding: 14px 25px;
-  margin-left: 30px;
-  border-radius: 10px;
+  padding: 0.875rem 1.5625rem;
+  margin-left: 1.875rem;
+  border-radius: 0.625rem;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
@@ -1320,8 +1320,8 @@ ul, li {
 
 .slider__btn-text {
   font-family: Gagalin;
-  font-size: 14px;
-  margin-top: 10px;
+  font-size: 0.875rem;
+  margin-top: 0.625rem;
   color: #fff;
 }
 
@@ -1357,15 +1357,15 @@ ul, li {
 .slider__arrow-left {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  width: 27px;
-  height: 13px;
+  width: 1.6875rem;
+  height: 0.8125rem;
 }
 
 .slider__arrow-right {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  width: 27px;
-  height: 13px;
+  width: 1.6875rem;
+  height: 0.8125rem;
 }
 
 .slider__composition-list {

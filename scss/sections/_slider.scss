@@ -12,7 +12,7 @@
   &__inner {
     position: relative;
     display: flex;
-    max-width: 1020px;
+    max-width: rem(1020px);
     margin: 0 auto;
     align-items: center;
     padding: 0 rem(15px);
@@ -26,8 +26,8 @@
     }
   }
   &__btn-icon {
-    width: 46px;
-    height: 44px;
+    width: rem(46px);
+    height: rem(44px);
   }
   &__kkal {
     order: 3;
@@ -46,7 +46,7 @@
       position: relative;
       @include title-font;
       color: #ffffff;
-      font-size: 20px;
+      font-size: rem(20px);
       opacity: 0.5;
       &::before {
         position: absolute;
@@ -55,16 +55,16 @@
         width: rem(60px);
         height: rem(60px);
         display: block;
-        top: -28px;
-        left: -13px;
+        top: rem(-28px);
+        left: rem(-13px);
       }
       &::after {
         content: "ккал";
         display: block;
         position: absolute;
-        left: 2px;
-        top: 35px;
-        font-size: 14px;
+        left: rem(2px);
+        top: rem(35px);
+        font-size: rem(14px);
       }
     }
   }
@@ -85,25 +85,25 @@
     }
     &-kkal {
       opacity: 0.5;
-      width: 60px;
-      height: 60px;
-      margin-left: 30px;
+      width: rem(60px);
+      height: rem(60px);
+      margin-left: rem(30px);
     }
     &-title {
       @include title-font;
-      font-size: 72px;
+      font-size: rem(72px);
       color: #ffffff;
-      padding-top: 50px;
+      padding-top: rem(50px);
       line-height: 1;
       @include mobile {
         font-size: rem(50px);
       }
     }
     &-txt {
-      font-size: 14px;
+      font-size: rem(14px);
       color: #ffffff;
       line-height: 2;
-      margin: 40px 0 0 0;
+      margin: rem(40px) 0 0 0;
     }
     &-order {
       display: flex;
@@ -114,16 +114,16 @@
     &-btn {
       align-self: flex-end;
       color: #fff;
-      margin-left: 30px;
+      margin-left: rem(30px);
     }
   }
   &__price-num {
     @include title-font;
-    font-size: 72px;
+    font-size: rem(72px);
   }
   &__price-txt {
     @include title-font;
-    font-size: 30px;
+    font-size: rem(30px);
   }
   &__img-block {
     display: flex;
@@ -138,9 +138,9 @@
   &__composition-btn {
     align-self: flex-start;
     background-color:#f08b33;
-    padding: 14px 25px;
-    margin-left: 30px;
-    border-radius: 10px;
+    padding: rem(14px) rem(25px);
+    margin-left: rem(30px);
+    border-radius: rem(10px);
     order: 1;
     &:hover {
       background-color: #e35028;
@@ -159,8 +159,8 @@
   }
   &__btn-text {
     font-family: Gagalin;
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: rem(14px);
+    margin-top: rem(10px);
     color: #fff;
   }
   &__desc {
@@ -179,13 +179,13 @@
   }
   &__arrow-left {
     transform: rotate(90deg);
-    width: 27px;
-    height: 13px;
+    width: rem(27px);
+    height: rem(13px);
   }
   &__arrow-right {
     transform: rotate(180deg);
-    width: 27px;
-    height: 13px;
+    width: rem(27px);
+    height: rem(13px);
   }
   &__composition-list {
     cursor: auto;
