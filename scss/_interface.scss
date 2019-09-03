@@ -33,6 +33,11 @@ ul, li {
   padding: 0;
 }
 
+fieldset {
+  margin: 0;
+  border: none;
+}
+
 .container {
   max-width: 945px;
   width: 95%;
@@ -116,9 +121,11 @@ ul, li {
     & .hamburger__toggle > span::after {
       top: 8px;
       transform: rotate(45deg);
+      transition: .3s;
     }
     & .hamburger__toggle > span::before {
       transform: rotate(-45deg);
+      transition: .3s;
     }
     & .hamburger__toggle > span {
       height: 0;
@@ -164,6 +171,7 @@ ul, li {
       height: 4px;
       background-color: #fff;
       border-radius: 2px;
+      transition: transform .3s;
     }
     & > span::before {
       content: "";

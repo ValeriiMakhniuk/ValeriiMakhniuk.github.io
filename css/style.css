@@ -476,6 +476,11 @@ ul, li {
   padding: 0;
 }
 
+fieldset {
+  margin: 0;
+  border: none;
+}
+
 .container {
   max-width: 945px;
   width: 95%;
@@ -598,11 +603,15 @@ ul, li {
   top: 8px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .hamburger-active .hamburger__toggle > span::before {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .hamburger-active .hamburger__toggle > span {
@@ -669,6 +678,10 @@ ul, li {
   height: 4px;
   background-color: #fff;
   border-radius: 2px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 
 .hamburger__toggle > span::before {
@@ -1066,7 +1079,8 @@ ul, li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url("/img/slider__bg.png") no-repeat center/cover;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(48%, #eb8c38), color-stop(74%, #f9b43b), to(#f9b43b));
+  background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
 }
 
 @media screen and (max-width: 768px) {
@@ -1101,6 +1115,22 @@ ul, li {
   .slider__inner {
     padding: 1.25rem 0.3125rem;
   }
+}
+
+.slider__content {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 50px;
+  position: relative;
+  right: 0;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
 }
 
 .slider__btn-icon {
@@ -1171,6 +1201,9 @@ ul, li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
 }
 
 @media screen and (max-width: 768px) {

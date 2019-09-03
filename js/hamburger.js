@@ -1,6 +1,11 @@
 let hamburger = document.querySelector('.hamburger');
 let toggle = document.querySelector('.hamburger__toggle');
 
-hamburger.addEventListener('click', (e) => {
-  hamburger.classList.add('hamburger-active');
+toggle.addEventListener('click', (e) => {
+  if (hamburger.classList.contains('hamburger-active')) {
+    hamburger.classList.remove('hamburger-active');
+  }
+  else {
+    hamburger.classList.add('hamburger-active');
+  }
 });

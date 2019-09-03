@@ -4,7 +4,7 @@
   height: 100vh;
   flex-direction: column;
   justify-content: center;
-  background: url('/img/slider__bg.png') no-repeat center / cover;
+  background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
   @include tablets {
     min-height: 100vh;
     height: auto;
@@ -24,6 +24,17 @@
     @include mobile {
       padding: rem(20px) rem(5px);
     }
+  }
+  &__content {
+    overflow: hidden;
+    width: 100%;
+  }
+  &__list {
+    display: flex;
+    padding-bottom: 50px;
+    position: relative;
+    right: 0;
+    transition: ease .5s;
   }
   &__btn-icon {
     width: rem(46px);
@@ -72,6 +83,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    flex: 1 0 100%;
     @include tablets {
       flex-direction: column;
     }
