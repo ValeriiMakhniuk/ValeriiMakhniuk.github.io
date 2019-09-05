@@ -520,6 +520,26 @@ fieldset {
   overflow: hidden;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2f3234;
+  opacity: 0.92;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10000;
+}
+
 .pannel {
   position: fixed;
   top: 90px;
@@ -1123,7 +1143,6 @@ fieldset {
 }
 
 .slider__content {
-  width: 100%;
   overflow: hidden;
 }
 
@@ -1492,6 +1511,41 @@ fieldset {
   .reviews {
     height: auto;
   }
+}
+
+.reviews__popup {
+  background-color: #fff;
+  position: relative;
+  padding: 30px 19px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  border-radius: 5px;
+  max-width: 460px;
+}
+
+.reviews__popup-header {
+  font-family: 'Gagalin';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.875rem;
+  margin-bottom: 30px;
+}
+
+.reviews__popup-toggle {
+  display: block;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  position: absolute;
+  right: 1.1875rem;
+  top: 0.9375rem;
+  background-image: url("/img/popup-close.png");
 }
 
 .reviews__list {

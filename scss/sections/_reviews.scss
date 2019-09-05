@@ -15,6 +15,31 @@ $review: reviews__review;
   @include tablets {
     height: auto;
   }
+  &__popup {
+    background-color: #fff;
+    position: relative;
+    padding: 30px 19px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 5px;
+    max-width: 460px;
+    &-header {
+      @include title-font;
+      font-size: rem(14px);
+      margin-bottom: 30px;
+    }
+    &-toggle {
+      display: block;
+      width: rem(15px);
+      height: rem(15px);
+      position: absolute;
+      right: rem(19px);
+      top: rem(15px);
+      background-image: url('/img/popup-close.png');
+    }
+  }
   &__list {
     display: flex;
     flex-flow: row wrap;
