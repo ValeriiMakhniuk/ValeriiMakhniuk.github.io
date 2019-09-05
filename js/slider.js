@@ -15,6 +15,9 @@ right.addEventListener('click', (e) => {
   if (currentRight < width - currentRight) {
     slider.style.right = currentRight + slideWidth + 'px';
   }
+  else {
+    slider.style.right = 0 + 'px';
+  }
 });
 
 left.addEventListener('click', (e) => {
@@ -22,5 +25,8 @@ left.addEventListener('click', (e) => {
   let currentRight = parseInt(getComputedStyle(slider).right);
   if (currentRight > 0) {
     slider.style.right = currentRight - slideWidth + 'px';
+  }
+  else {
+    slider.style.right = width - slideWidth + 'px';
   }
 });

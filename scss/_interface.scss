@@ -55,6 +55,11 @@ fieldset {
   @include btn;
 }
 
+.stop-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
 .pannel {
   position: fixed;
   top: 90px;
@@ -112,7 +117,7 @@ fieldset {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: rem(20px);
     background-color: #2f3234;
     opacity: .98;

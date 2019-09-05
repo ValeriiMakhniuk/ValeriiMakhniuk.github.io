@@ -26,11 +26,12 @@
     }
   }
   &__content {
-    overflow: hidden;
     width: 100%;
+    overflow: hidden;
   }
   &__list {
     display: flex;
+    height: 100%;
     padding-bottom: 50px;
     position: relative;
     right: 0;

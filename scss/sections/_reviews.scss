@@ -9,12 +9,12 @@ $review: reviews__review;
 }
 
 .reviews {
-  // height: 100vh;
-  // display: flex;
-  display: none;
-  // @include tablets {
-  //   height: auto;
-  // }
+  height: 100vh;
+  display: flex;
+  // display: none;
+  @include tablets {
+    height: auto;
+  }
   &__list {
     display: flex;
     flex-flow: row wrap;

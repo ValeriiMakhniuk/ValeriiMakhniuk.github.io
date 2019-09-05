@@ -68,6 +68,7 @@ $item: menu__item;
       overflow: hidden;
       max-width: rem(541px);
       padding: rem(62px) rem(25px);
+      transition: width ease-in-out 3s;
     }
     &-active .menu__item-title {
       color: #f9b43b;
@@ -81,5 +82,6 @@ $item: menu__item;
     color: #fff;
     line-height: 2;
     font-size: rem(14px);
+    transition: width ease-in-out 1s;
   }
 }
